@@ -2,8 +2,6 @@
 import { motion } from "framer-motion";
 import Header from "@/components/header";
 import ListView from "@/components/stack-list";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IoLogoLinkedin } from "react-icons/io5";
 import { FiGithub, FiInstagram } from "react-icons/fi";
 import ContactForm from "@/components/contact-form";
 import { LuPhone } from "react-icons/lu";
@@ -29,8 +27,8 @@ export default function Contact() {
             <>
               Ready to debug, brainstorm, or collaborate?{" "}
               <span className="text-green-400">Let’s connect</span> & make
-              awesome things happen! Whether it's code or conversation, I'm just
-              a message away.
+              awesome things happen! Whether it&apos;s code or conversation,
+              I&apos;m just a message away.
             </>
           }
           isHome={false}

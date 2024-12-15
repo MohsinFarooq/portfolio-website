@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ReactNode } from "react";
-import { IconType } from "react-icons";
 
 type StackListTypeProps = {
   title: string;

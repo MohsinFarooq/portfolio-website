@@ -2,7 +2,6 @@
 import Header from "@/components/header";
 import StackCard from "@/components/stack-card";
 import { motion } from "framer-motion";
-import Head from "next/head";
 import { stackInfo } from "@/utils/stack-info";
 
 export default function Stack() {

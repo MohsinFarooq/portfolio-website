@@ -6,9 +6,6 @@ import { FaGithub } from "react-icons/fa";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
 export default function MenuItem() {
-  function classNames(...classes: any) {
-    return classes.filter(Boolean).join(" ");
-  }
   return (
     <Menu as="div" className="text-left block lg:hidden">
       <div>

@@ -11,7 +11,6 @@ export default function MenuItem() {
       <div>
         <Menu.Button className="w-full justify-center bg-zing-800 px-3 py-2 text-sm font-semibold text-white btn-circle btn-ghost">
           {({ open }) =>
-            //I used the Built-In state from Headless UI to harmonize between the two icons down below
             open ? (
               <HiOutlineX className="w-6 h-6" />
             ) : (

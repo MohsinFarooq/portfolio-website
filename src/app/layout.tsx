@@ -33,7 +33,7 @@ export default function RootLayout({
             <div className="lg:hidden block sticky top-0 z-50">
               <Navbar />
             </div>
-            <div className="lg:w-[16.5rem] 2xl:w[18rem] relative lg:block hidden">
+            <div className="lg:w-[16.5rem] 2xl:w-[18rem] relative lg:block hidden">
               <div className="lg:w-[16.5rem] fixed 2xl:w-[18rem] h-full py-6 top-0 rounded-3xl">
                 <Sidebar />
               </div>

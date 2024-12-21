@@ -33,7 +33,7 @@ export default function Stack() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: [0, 0.8, 1], x: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.3,
                   ease: "easeInOut",
                   delay: 0.4 + index * 0.1,
                   type: "spring",

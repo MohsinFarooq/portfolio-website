@@ -21,7 +21,7 @@ export default function StackCard({
         boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
         backgroundColor: "#2C2C2E",
       }}
-      transition={{ type: "spring", stiffness: 500, damping: 25 }}
+      transition={{ type: "spring", stiffness: 600, damping: 35 }}
     >
       <div className="h-full w-full flex flex-col justify-between">
         <figure className="w-16 h-16">

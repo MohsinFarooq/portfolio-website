@@ -4,19 +4,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #171717;
+  --foreground: #d1d5db;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Poppins", sans-serif;
+}
+a,
+button {
+  border: none;
 }

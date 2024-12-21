@@ -27,7 +27,7 @@ export default function RootLayout({
     <html>
       <body>
         <main
-          className={`${poppins.variable} font-poppins w-full bg-dark-100 p-4 lg:p-6`}
+          className={`${poppins.variable} font-poppins w-full bg-dark-100 p-4 lg:p-6 h-100`}
         >
           <div className="relative flex lg:flex-row flex-col 2xl:gap-11 lg:gap-6 gap-5">
             <div className="lg:hidden block sticky top-0 z-50">

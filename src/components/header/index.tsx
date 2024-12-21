@@ -13,9 +13,7 @@ export default function Header({ title, description, isHome }: HeaderProps) {
         ${!isHome ? "p-8 gap-3" : ""} bg-dark-cards_200 justify-end`}
     >
       <h1 className="text-4xl capitalize font-bold text-white">{title}</h1>
-      <p className="text-md text-gray-300 font-light text-justify">
-        {description}
-      </p>
+      <p className="text-md text-gray-300 font-light">{description}</p>
     </div>
   );
 }

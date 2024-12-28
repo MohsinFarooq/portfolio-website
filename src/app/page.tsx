@@ -24,6 +24,20 @@ export default function Home() {
           href="/favicon-96x96.png"
           sizes="96x96"
         />
+        <meta property="og:title" content="Mohsin Farooq" />
+        <meta
+          property="og:description"
+          content="Frontend Developer Portfolio"
+        />
+        <meta property="og:image" content="/images/profile.jpeg" />
+        <meta property="og:url" content="https://mohsinfarooq.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mohsin Farooq" />
+        <meta
+          name="twitter:description"
+          content="Frontend Developer Portfolio"
+        />
+        <meta name="twitter:image" content="/images/profile.jpeg" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link

@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import Lanyard from "@/components/lanyard-main/Lanyard";
 import "./globals.css";
 
 // Import the Poppins font with different weights

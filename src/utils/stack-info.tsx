@@ -100,9 +100,4 @@ export const stackInfo: { [key: string]: StackInfo } = {
     title: "Next.js",
     description: "React framework for SSR",
   },
-  nestjs: {
-    icon: "/images/nestjs.svg",
-    title: "NestJS",
-    description: "Node.js framework for backend",
-  },
 };

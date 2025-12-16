@@ -82,7 +82,7 @@ export default function Sidebar() {
         <div className="flex lg:flex-col gap-2 items-center py-10">
           <figure className="w-16 h-16">
             <Image
-              src="/images/mohsin.jpg"
+              src="/images/mohsin.jpeg"
               alt="profile picture"
               priority
               height={500}

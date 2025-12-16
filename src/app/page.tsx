@@ -2,7 +2,6 @@
 import { LiaBrainSolid } from "react-icons/lia";
 import { FaInfinity, FaRocket } from "react-icons/fa6";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Header from "@/components/header";
@@ -67,7 +66,7 @@ export default function Home() {
               description={
                 <>
                   I&apos;m a Frontend Developer with{" "}
-                  <span className="text-green-400">2+ years of experience</span>
+                  <span className="text-green-400">3+ years of experience</span>
                   , specializing in creating seamless, responsive user
                   interfaces. Skilled in Angular and Nx monorepos, I excel at
                   building polished UI designs and integrating APIs with
@@ -83,7 +82,7 @@ export default function Home() {
             <Link
               className="btn btn-sm py-2 text-md md:ml-0 xl:ml-8 md:mt-0 font-bold lg:w-36 flex items-center justify-center w-full my-2 hover:bg-hover_btn rounded-3xl self-start  bg-green-700 text-gray-100"
               href={
-                "https://drive.google.com/file/d/1M5MSdpYGSNSquSZVrI25wNd_i3bd8H8R/view?usp=drive_link"
+                "https://drive.google.com/file/d/1wrv0co-OyxsHfj9q99O3xTpQ3DGNmwYF/view?usp=drive_link"
               }
               rel="noopener noreferrer"
               target="_blank"
@@ -91,17 +90,6 @@ export default function Home() {
               Download CV
             </Link>
           </div>
-          <figure className="h-48 w-48 lg:block hidden">
-            <Image
-              src="/images/profile.jpeg"
-              alt=""
-              height={500}
-              width={500}
-              style={{ objectPosition: "50% 70%" }}
-              priority
-              className="w-full h-full object-cover rounded-2xl"
-            />
-          </figure>
         </motion.div>
         {/* Second Section */}
         <div className="flex xl:flex-row flex-col w-full min-h-fit gap-5">

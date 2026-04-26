@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Header from "@/components/header";
+import ProjectsGrid from "@/components/project-grid/project-grid";
 
 export default function Project() {
   return (
@@ -22,6 +23,7 @@ export default function Project() {
           isHome={false}
         />
       </motion.div>
+
       <motion.div
         className="flex flex-col flex-grow w-full"
         initial={{ opacity: 0, x: 50 }}
@@ -40,16 +42,8 @@ export default function Project() {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-grow items-center justify-center w-full h-screen p-6">
-          {/* Coming Soon Section */}
-          <div className="bg-dark-300 rounded-xl p-10 text-center w-full max-w-2xl bg-dark-cards_200">
-            <h2 className="text-green-400 text-2xl font-semibold">
-              Coming Soon!
-            </h2>
-            <p className="text-gray-300 mt-4">
-              Stay tuned! Exciting projects are on their way.
-            </p>
-          </div>
+        <div className="w-full p-6">
+          <ProjectsGrid />
         </div>
       </motion.div>
     </>

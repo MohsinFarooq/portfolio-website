@@ -1,103 +1,121 @@
+export type StackCategory =
+  | "Frontend"
+  | "Backend"
+  | "DevOps & Testing"
+  | "Tools";
+
 type StackInfo = {
   icon: string;
   title: string;
-  description: string;
+  category: StackCategory;
 };
+
+export const stackCategoryOrder: StackCategory[] = [
+  "Frontend",
+  "Backend",
+  "DevOps & Testing",
+  "Tools",
+];
 
 export const stackInfo: { [key: string]: StackInfo } = {
   html: {
     icon: "/images/html.png",
     title: "HTML",
-    description: "Markup language for web",
+    category: "Frontend",
   },
   css: {
     icon: "/images/css.png",
     title: "CSS",
-    description: "Styles for web pages",
+    category: "Frontend",
   },
   js: {
     icon: "/images/javascript.png",
     title: "JavaScript",
-    description: "Scripting language for interactivity",
+    category: "Frontend",
   },
   sass: {
     icon: "/images/sass.svg",
     title: "Sass",
-    description: "CSS preprocessor",
+    category: "Frontend",
   },
   angular: {
     icon: "/images/angular.png",
     title: "Angular",
-    description: "Frontend framework by Google",
+    category: "Frontend",
   },
   typescript: {
     icon: "/images/typescript.svg",
     title: "TypeScript",
-    description: "JavaScript with types",
+    category: "Frontend",
   },
   rxjs: {
     icon: "/images/rxjs.png",
     title: "RxJS",
-    description: "Reactive programming library",
-  },
-  git: {
-    icon: "/images/git.png",
-    title: "Git",
-    description: "Version control system",
-  },
-  github: {
-    icon: "/images/github.png",
-    title: "GitHub",
-    description: "Code hosting platform",
-  },
-  gitlab: {
-    icon: "/images/gitlab.svg",
-    title: "GitLab",
-    description: "DevOps and version control",
-  },
-  mysql: {
-    icon: "/images/mysql.svg",
-    title: "MySQL",
-    description: "Relational database",
-  },
-  prisma: {
-    icon: "/images/prisma.svg",
-    title: "Prisma",
-    description: "ORM for databases",
-  },
-  jenkins: {
-    icon: "/images/jenkins.svg",
-    title: "Jenkins",
-    description: "Automation server",
-  },
-  cypress: {
-    icon: "/images/cypress.png",
-    title: "Cypress",
-    description: "End-to-end testing tool",
-  },
-  jest: {
-    icon: "/images/jest.svg",
-    title: "Jest",
-    description: "JavaScript testing framework",
+    category: "Frontend",
   },
   bootstrap: {
     icon: "/images/bootstrap.png",
     title: "Bootstrap",
-    description: "CSS framework",
+    category: "Frontend",
   },
   tailwind: {
     icon: "/images/tailwind.png",
     title: "Tailwind CSS",
-    description: "Utility-first CSS framework",
+    category: "Frontend",
   },
-  react: {
-    icon: "/images/react.png",
-    title: "React",
-    description: "JavaScript library for UI",
+  java: {
+    icon: "/images/Java.svg",
+    title: "Java",
+    category: "Backend",
   },
-  nextjs: {
-    icon: "/images/nextjs.png",
-    title: "Next.js",
-    description: "React framework for SSR",
+  springboot: {
+    icon: "/images/Spring.svg",
+    title: "Spring Boot",
+    category: "Backend",
+  },
+  mysql: {
+    icon: "/images/mysql.svg",
+    title: "MySQL",
+    category: "Backend",
+  },
+  prisma: {
+    icon: "/images/prisma.svg",
+    title: "Prisma",
+    category: "Backend",
+  },
+  docker: {
+    icon: "/images/Docker.svg",
+    title: "Docker",
+    category: "DevOps & Testing",
+  },
+  jenkins: {
+    icon: "/images/jenkins.svg",
+    title: "Jenkins",
+    category: "DevOps & Testing",
+  },
+  cypress: {
+    icon: "/images/cypress.png",
+    title: "Cypress",
+    category: "DevOps & Testing",
+  },
+  jest: {
+    icon: "/images/jest.svg",
+    title: "Jest",
+    category: "DevOps & Testing",
+  },
+  git: {
+    icon: "/images/git.png",
+    title: "Git",
+    category: "Tools",
+  },
+  github: {
+    icon: "/images/github.png",
+    title: "GitHub",
+    category: "Tools",
+  },
+  gitlab: {
+    icon: "/images/gitlab.svg",
+    title: "GitLab",
+    category: "Tools",
   },
 };

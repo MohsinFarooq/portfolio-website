@@ -2,9 +2,29 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { GiBrain } from "react-icons/gi";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+const socials = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/mohsin-farooq-352a98215/",
+    Icon: FaLinkedin,
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/MohsinFarooq",
+    Icon: FaGithub,
+  },
+  {
+    label: "LeetCode",
+    href: "https://leetcode.com/u/mohsin08/",
+    Icon: SiLeetcode,
+  },
+];
 
 export default function Sidebar() {
   const links = ["Home", "Project", "Experience", "Stack", "Contact"];
@@ -51,7 +71,7 @@ export default function Sidebar() {
               >
                 <GiBrain />
               </motion.div>
-              <span className="ml-2 font-semibold">Fixing bugs</span>
+              <span className="ml-2 font-semibold">Learning on loop</span>
             </span>
           </div>
         </div>
@@ -93,7 +113,21 @@ export default function Sidebar() {
           </figure>
           <div className="flex flex-col text-center">
             <p className="text-lg text-white font-bold">Mohsin Farooq</p>
-            <p className="text-xs font-light">Front-End Developer</p>
+            <p className="text-xs font-light">Software Developer</p>
+          </div>
+          <div className="flex items-center gap-4 pt-2">
+            {socials.map(({ label, href, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="text-gray-400 transition-colors duration-200 hover:text-green-400"
+              >
+                <Icon size={20} />
+              </a>
+            ))}
           </div>
         </div>
       </div>

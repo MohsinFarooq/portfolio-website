@@ -3,43 +3,28 @@ import { motion } from "framer-motion";
 
 type StackCardTypeProps = {
   title: string;
-  description: string;
   imageUrl: string;
 };
 
-export default function StackCard({
-  title,
-  description,
-  imageUrl,
-}: StackCardTypeProps) {
+export default function StackCard({ title, imageUrl }: StackCardTypeProps) {
   return (
     <motion.div
-      className="h-72 w-full p-6 bg-dark-200 rounded-3xl transition duration-500 cursor-pointer"
-      whileHover={{
-        scale: 1.05,
-        rotate: -2,
-        boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
-        backgroundColor: "#2C2C2E",
-      }}
-      transition={{ type: "spring", stiffness: 600, damping: 35 }}
+      className="flex h-28 flex-col items-center justify-center gap-3 rounded-2xl border border-white/5 bg-[#1e2329] p-3 transition-colors duration-200 hover:border-green-500/40 hover:bg-[#252b32]"
+      whileHover={{ y: -4 }}
+      transition={{ type: "spring", stiffness: 400, damping: 22 }}
     >
-      <div className="h-full w-full flex flex-col justify-between">
-        <figure className="w-16 h-16">
-          <Image
-            src={imageUrl}
-            alt={`${title} icon`}
-            height={500}
-            width={500}
-            className={`w-full h-full ${
-              title === "Cypress" ? "object-contain" : "object-cover"
-            }`}
-          />
-        </figure>
-        <div className="flex flex-col gap-3 w-full px-4">
-          <h1 className="text-2xl text-white font-bold">{title}</h1>
-          <p className="text-md font-light text-gray-200">{description}</p>
-        </div>
-      </div>
+      <figure className="h-9 w-9 shrink-0">
+        <Image
+          src={imageUrl}
+          alt={`${title} icon`}
+          height={72}
+          width={72}
+          className="h-full w-full object-contain"
+        />
+      </figure>
+      <span className="text-center text-sm font-semibold text-gray-200">
+        {title}
+      </span>
     </motion.div>
   );
 }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { Fragment } from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
 export default function MenuItem() {
@@ -88,6 +89,14 @@ export default function MenuItem() {
               target="_blank"
             >
               <CiLinkedin className="text-3xl" />
+            </Link>
+            <Link
+              className="btn btn-circle btn-ghost"
+              href="https://leetcode.com/u/mohsin08/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <SiLeetcode className="text-2xl" />
             </Link>
           </div>
         </Menu.Items>

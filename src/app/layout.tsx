@@ -15,7 +15,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Mohsin's Portfolio",
   description:
-    "Mohsin Farooq’s portfolio – a frontend developer with over 2 years of experience in Angular and Nx Monorepos, showcasing efficient, scalable web applications.",
+    "Mohsin Farooq’s portfolio – a software developer with 4+ years of experience in Angular and Nx Monorepos, showcasing efficient, scalable web applications.",
 };
 
 export default function RootLayout({

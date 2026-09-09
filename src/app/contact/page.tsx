@@ -2,10 +2,8 @@
 import { motion } from "framer-motion";
 import Header from "@/components/header";
 import ListView from "@/components/stack-list";
-import { FiGithub, FiInstagram } from "react-icons/fi";
 import ContactForm from "@/components/contact-form";
 import { LuPhone } from "react-icons/lu";
-import { CiLinkedin } from "react-icons/ci";
 export default function Contact() {
   return (
     <>
@@ -65,7 +63,7 @@ export default function Contact() {
           >
             <div className="lg:w-[60%] w-full flex flex-col gap-3 pl-8 md:pl-0">
               <h1 className="text-2xl uppercase text-white py-3 font-bold">
-                Socials
+                Call or Text
               </h1>
             </div>
             <motion.div
@@ -83,57 +81,6 @@ export default function Contact() {
                 isTechList={false}
                 icon={<LuPhone />}
                 url={"tel:+916006713403"}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: [0, 0.8, 1], x: 0 }}
-              transition={{
-                duration: 0.6,
-                ease: "easeInOut",
-                delay: 0.6,
-                type: "spring",
-              }}
-            >
-              <ListView
-                title="LinkedIn"
-                isTechList={false}
-                icon={<CiLinkedin />}
-                url={"https://www.linkedin.com/in/mohsin-farooq-352a98215/"}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: [0, 0.8, 1], x: 0 }}
-              transition={{
-                duration: 0.6,
-                ease: "easeInOut",
-                delay: 0.7,
-                type: "spring",
-              }}
-            >
-              <ListView
-                title="Github"
-                isTechList={false}
-                icon={<FiGithub />}
-                url={"https://github.com/MohsinFarooq"}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: [0, 0.8, 1], x: 0 }}
-              transition={{
-                duration: 0.6,
-                ease: "easeInOut",
-                delay: 0.7,
-                type: "spring",
-              }}
-            >
-              <ListView
-                title="Instagram"
-                isTechList={false}
-                icon={<FiInstagram />}
-                url={"https://www.instagram.com/mohsinfarooq.x/"}
               />
             </motion.div>
           </motion.div>

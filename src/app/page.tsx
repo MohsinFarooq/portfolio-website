@@ -7,10 +7,11 @@ import Head from "next/head";
 import Header from "@/components/header";
 import InfoCard from "@/components/info-card";
 import ListView from "@/components/stack-list";
+import ProjectList from "@/components/project-list";
 import Slider from "@/components/swiper";
 import { stackInfo } from "@/utils/stack-info";
 
-const selectedTechStackOnMainPage = ["angular", "react", "cypress", "jenkins"];
+const selectedTechStackOnMainPage = ["angular", "java", "springboot", "docker"];
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
         <meta property="og:title" content="Mohsin Farooq" />
         <meta
           property="og:description"
-          content="Frontend Developer Portfolio"
+          content="Software Developer Portfolio"
         />
         <meta property="og:image" content="/images/profile.jpeg" />
         <meta property="og:url" content="https://mohsinfarooq.vercel.app" />
@@ -34,7 +35,7 @@ export default function Home() {
         <meta name="twitter:title" content="Mohsin Farooq" />
         <meta
           name="twitter:description"
-          content="Frontend Developer Portfolio"
+          content="Software Developer Portfolio"
         />
         <meta name="twitter:image" content="/images/profile.jpeg" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -65,14 +66,16 @@ export default function Home() {
               title="Hello! I'm Mohsin."
               description={
                 <>
-                  I&apos;m a Frontend Developer with{" "}
-                  <span className="text-green-400">3+ years of experience</span>
+                  I&apos;m a Software Developer with{" "}
+                  <span className="text-green-400">4+ years of experience</span>
                   , specializing in creating seamless, responsive user
                   interfaces. Skilled in Angular and Nx monorepos, I excel at
                   building polished UI designs and integrating APIs with
-                  front-end components. With a focus on detail and quality, I
-                  have hands-on experience in both end-to-end and unit testing,
-                  and I&apos;m building my expertise in CI/CD practices using
+                  front-end components. I also have working knowledge of Java and
+                  Spring Boot on the backend, along with Docker for
+                  containerization. With a focus on detail and quality, I have
+                  hands-on experience in both end-to-end and unit testing, and
+                  I&apos;m building my expertise in CI/CD practices using
                   Jenkins. Outside of work, I&apos;m passionate about football,
                   a dedicated reader, and enjoy writing as a creative outlet.
                 </>
@@ -82,7 +85,7 @@ export default function Home() {
             <Link
               className="btn btn-sm py-2 text-md md:ml-0 xl:ml-8 md:mt-0 font-bold lg:w-36 flex items-center justify-center w-full my-2 hover:bg-hover_btn rounded-3xl self-start  bg-green-700 text-gray-100"
               href={
-                "https://drive.google.com/file/d/1wrv0co-OyxsHfj9q99O3xTpQ3DGNmwYF/view?usp=drive_link"
+                "https://drive.google.com/file/d/1UcS1mwbRrosguUhIJiLzM7YW_XEgXlrZ/view?usp=drive_link"
               }
               rel="noopener noreferrer"
               target="_blank"
@@ -237,16 +240,7 @@ export default function Home() {
               View All
             </Link>
           </div>
-          <div className="flex flex-col lg:flex-row w-full min-h-fit gap-5 items-center justify-center rounded-2xl bg-dark-cards_200">
-            <div className="bg-dark-300 rounded-xl p-10 text-center w-full max-w-2xl bg-dark-cards_200">
-              <h2 className="text-green-400 text-2xl font-semibold">
-                Coming Soon!
-              </h2>
-              <p className="text-gray-300 mt-4">
-                Stay tuned! Exciting projects are on their way.
-              </p>
-            </div>
-          </div>
+          <ProjectList limit={3} />
         </motion.div>
         {/* Testimonials */}
         <motion.div
